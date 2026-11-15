@@ -1,0 +1,26 @@
+h1 {
+    font-family: verdana;
+    font-size: 10pt;
+}
+
+.judul1 {
+    color: red;
+    text-align: center;
+}
+
+.judul2 {
+    color: orange;
+    text-align: right;
+}
+
+.paragraf1 {
+    color: white;
+    background: red;
+    font-family: arial;
+}
+
+.paragraf2 {
+    color: yellow;
+    background: orange;
+    font-family: verdana;
+}

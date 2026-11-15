@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Biodata</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+    }
+
+    .container{
+      width: 320px;
+      margin: 50px auto;
+      padding: 15px;
+      border: 1px solid #999;
+      border-radius: 8px;
+      background-color: white;
+    }
+
+    h3{
+      text-align: center;
+      color: #333;
+    }
+
+    input, textarea{
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #999;
+      border-radius: 4px;
+    }
+
+    button{
+      width: 100%;
+      padding: 8px;
+      background-color: #4da6ff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    button:hover{
+      background-color: #3399ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h3>Form Biodata</h3>
+
+    <form>
+
+      <label>Nama Lengkap</label><br>
+      <input 
+        type="text"
+        maxlength="50"
+        placeholder="Masukkan nama lengkap"
+        required
+      >
+
+      <label>Umur</label><br>
+      <input 
+        type="text"
+        maxlength="2"
+        placeholder="Masukkan umur"
+        required
+      >
+
+      <label>Alamat</label><br>
+      <textarea 
+        rows="5"
+        placeholder="Masukkan alamat"
+        required
+      ></textarea>
+
+      <button type="submit">Simpan</button>
+
+    </form>
+  </div>
+
+</body>
+</html>

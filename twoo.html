@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Belajar Siswa RPL SMK NEGERI 1 DLANGGU</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg-card: #faf7ff;
+    --primary: #7c6bcf;
+    --primary-soft: #e9e2ff;
+    --text-dark: #4b4453;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e6dcff, #f8f4ff);
+    color: var(--text-dark);
+}
+
+header {
+    text-align: center;
+    padding: 45px 20px 35px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.4;
+}
+
+.container {
+    width: 90%;
+    max-width: 880px;
+    margin: auto;
+    background: var(--bg-card);
+    padding: 45px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(120, 100, 180, 0.12);
+    margin-bottom: 130px;
+}
+
+.gambar-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.gambar-container img {
+    width: 190px;
+    border-radius: 24px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(140, 120, 200, 0.12);
+}
+
+.gambar-container img:hover {
+    transform: translateY(-6px) scale(1.05);
+}
+
+p {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 28px;
+    background: var(--primary-soft);
+    font-size: 14px;
+    color: var(--primary);
+}
+
+/* VIDEO IKLAN */
+.video-iklan {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 240px;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(120, 100, 180, 0.20);
+}
+
+.video-header {
+    background: var(--primary-soft);
+    color: var(--primary);
+    padding: 9px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tutup-btn {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.video-iklan video {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Portal Belajar Siswa RPL SMK Negeri 1 Dlanggu</h1>
+</header>
+
+<div class="container">
+    <div class="gambar-container">
+        <img src="foto html.png" alt="Belajar HTML">
+        <img src="struktur-html.jpg" alt="Struktur HTML">
+    </div>
+
+    <p>
+        Struktur dasar HTML sangat penting karena menjadi kerangka utama dalam pembuatan halaman web.
+        Dengan struktur yang baik, halaman web menjadi lebih rapi, teratur, dan mudah dipahami oleh
+        pengembang maupun browser.
+    </p>
+</div>
+
+<footer>
+    Dibuat oleh <b>Azzizul Fa'idzahra</b> • 2026
+</footer>
+
+<!-- VIDEO IKLAN (HIDE SAJA) -->
+<div class="video-iklan" id="iklanVideo">
+    <div class="video-header">
+        <span>🎥 Video Pembelajaran</span>
+        <span class="tutup-btn" onclick="document.getElementById('iklanVideo').style.display='none'">✖</span>
+    </div>
+    <video controls muted>
+        <source src="vidioHTML.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+</div>
+
+</body>
+</html>
